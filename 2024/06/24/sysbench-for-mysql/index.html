@@ -17,18 +17,18 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"./public/search.xml"};
   </script>
 
-  <meta name="description" content="1111">
+  <meta name="description" content="使用SysBench测试Mysql性能 一、安装包SysBenchhttps:&#x2F;&#x2F;github.com&#x2F;akopytov&#x2F;sysbench&#x2F;releases&#x2F;tag&#x2F;1.0.20 Mysql(8.0.37)https:&#x2F;&#x2F;dev.mysql.com&#x2F;downloads&#x2F;mysql&#x2F; 二、配置12cd ls">
 <meta property="og:type" content="article">
-<meta property="og:title" content="sysbench for mysql">
+<meta property="og:title" content="SysBench for MySQL">
 <meta property="og:url" content="http://example.com/2024/06/24/sysbench-for-mysql/index.html">
 <meta property="og:site_name" content="zhiweiLing">
-<meta property="og:description" content="1111">
+<meta property="og:description" content="使用SysBench测试Mysql性能 一、安装包SysBenchhttps:&#x2F;&#x2F;github.com&#x2F;akopytov&#x2F;sysbench&#x2F;releases&#x2F;tag&#x2F;1.0.20 Mysql(8.0.37)https:&#x2F;&#x2F;dev.mysql.com&#x2F;downloads&#x2F;mysql&#x2F; 二、配置12cd ls">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-06-24T14:10:54.000Z">
-<meta property="article:modified_time" content="2024-06-24T14:12:05.664Z">
+<meta property="article:modified_time" content="2024-06-24T14:36:15.918Z">
 <meta property="article:author" content="zhiweiLing">
 <meta property="article:tag" content="code">
 <meta name="twitter:card" content="summary">
@@ -46,7 +46,7 @@
   };
 </script>
 
-  <title>sysbench for mysql | zhiweiLing</title>
+  <title>SysBench for MySQL | zhiweiLing</title>
   
 
 
@@ -104,6 +104,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -133,20 +134,43 @@
     <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </div>
     </header>
 
     
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
 
 
     <main class="main">
@@ -174,7 +198,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          sysbench for mysql
+          SysBench for MySQL
         </h1>
 
         <div class="post-meta">
@@ -185,8 +209,10 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2024-06-24 22:10:54 / 修改时间：22:12:05" itemprop="dateCreated datePublished" datetime="2024-06-24T22:10:54+08:00">2024-06-24</time>
+              <time title="创建时间：2024-06-24 22:10:54 / 修改时间：22:36:15" itemprop="dateCreated datePublished" datetime="2024-06-24T22:10:54+08:00">2024-06-24</time>
             </span>
+
+          
 
           
 
@@ -199,8 +225,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>1111</p>
-
+        <p>使用SysBench测试Mysql性能</p>
+<h2 id="一、安装包"><a href="#一、安装包" class="headerlink" title="一、安装包"></a>一、安装包</h2><h3 id="SysBench"><a href="#SysBench" class="headerlink" title="SysBench"></a>SysBench</h3><p><a target="_blank" rel="noopener" href="https://github.com/akopytov/sysbench/releases/tag/1.0.20">https://github.com/akopytov/sysbench/releases/tag/1.0.20</a></p>
+<h3 id="Mysql-8-0-37"><a href="#Mysql-8-0-37" class="headerlink" title="Mysql(8.0.37)"></a>Mysql(8.0.37)</h3><p><a target="_blank" rel="noopener" href="https://dev.mysql.com/downloads/mysql/">https://dev.mysql.com/downloads/mysql/</a></p>
+<h2 id="二、配置"><a href="#二、配置" class="headerlink" title="二、配置"></a>二、配置</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> </span><br><span class="line"><span class="built_in">ls</span></span><br></pre></td></tr></table></figure>
     </div>
 
     
@@ -219,7 +247,6 @@
   
   
   
-
 
 
           </div>
@@ -270,6 +297,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%AE%89%E8%A3%85%E5%8C%85"><span class="nav-number">1.</span> <span class="nav-text">一、安装包</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#SysBench"><span class="nav-number">1.1.</span> <span class="nav-text">SysBench</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Mysql-8-0-37"><span class="nav-number">1.2.</span> <span class="nav-text">Mysql(8.0.37)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E9%85%8D%E7%BD%AE"><span class="nav-number">2.</span> <span class="nav-text">二、配置</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -293,6 +321,10 @@
 
 
       </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
 
     </div>
   </aside>
@@ -317,7 +349,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder">zhiweiLing</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
 
         
@@ -334,6 +366,7 @@
   </div>
 
   
+  <script color='' opacity='' zIndex='' count='' src="/lib/canvas-nest/canvas-nest-nomobile.min.js"></script>
   <script src="/lib/anime.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
@@ -354,6 +387,10 @@
   
 
 
+
+
+  
+<script src="/js/local-search.js"></script>
 
 
 
