@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on Zhiwei Ling</title>
-    <link>https://lingandzero.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in Home on Zhiwei Ling</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://lingandzero.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Publication</title>
-      <link>https://lingandzero.github.io/publication/</link>
+      <link>http://localhost:1313/publication/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://lingandzero.github.io/publication/</guid>
-      <description>2025:&#xA;(CCF-A) Zhiwei Ling, Yachen Chang, Hailiang Zhao, Xinkui Zhao, Kingsum Chow, and Shuiguang Deng. CADRef: Robust Out-of-Distribution Detection via Class-Aware Decoupled Relative Feature Leveraging. In IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025. [Code] 2024:&#xA;(CCF-A) Jun Xia, Zhihao Yue, Yingbo Zhou, Zhiwei Ling, Yiyu Shi, Xian Wei, Mingsong Chen. WaveAttack: Asymmetric Frequency Obfuscation-based Backdoor Attacks Against Deep Neural Networks. In Conference on Neural Information Processing Systems (NeurIPS), 2024</description>
+      <guid>http://localhost:1313/publication/</guid>
+      <description>2025:&#xA;(CCF-A) Zhiwei Ling, Yachen Chang, Hailiang Zhao, Xinkui Zhao, Kingsum Chow, and Shuiguang Deng. CADRef: Robust Out-of-Distribution Detection via Class-Aware Decoupled Relative Feature Leveraging. In IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2025. [Code] 2024:&#xA;(CCF-A) Jun Xia, Zhihao Yue, Yingbo Zhou, Zhiwei Ling, Yiyu Shi, Xian Wei, Mingsong Chen. WaveAttack: Asymmetric Frequency Obfuscation-based Backdoor Attacks Against Deep Neural Networks. In Conference on Neural Information Processing Systems (NeurIPS), 2024.</description>
     </item>
   </channel>
 </rss>
