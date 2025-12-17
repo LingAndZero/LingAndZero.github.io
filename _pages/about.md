@@ -50,7 +50,15 @@ My current research primarily focuses on the following areas:
 
 - (<span style="color:red">CCF-A</span>) Ming Hu, Peiheng Zhou, Zhihao Yue, **Zhiwei Ling**, Yihao Huang, Anran Li, Yang Liu, Xiang Lian, Mingsong Chen, [FedCross: Towards accurate federated learning via multi-model cross-aggregation](https://ieeexplore.ieee.org/document/10597740/). IEEE International Conference on Data Engineering (ICDE), Utrecht, The Netherlands, May 13-16, 2024. (Acceptance Rate: 25.4%)
 
-- (<span style="color:green">CCF-C</span>) Ming Hu, Peiheng Zhou, Zhihao Yue, **Zhiwei Ling**, Yihao Huang, Anran Li, Yang Liu, Xiang Lian, Mingsong Chen, [FedCross: Towards accurate federated learning via multi-model cross-aggregation](https://ieeexplore.ieee.org/document/10597740/). IEEE International Conference on Data Engineering (ICDE), Utrecht, The Netherlands, May 13-16, 2024. (Acceptance Rate: 25.4%)
+- (<span style="color:green">CCF-C</span>) **Zhiwei Ling**, Zhihao Yue, Jun Xia, Ting Wang, Mingsong Chen, Xiang Lian, [FedEntropy: Efficient Federated Learning for Non-IID Scenarios Using Maximum Entropy Judgment-based Client Selection](https://ieeexplore.ieee.org/abstract/document/10491750). International Symposium on Parallel and Distributed Processing with Applications (ISPA), Wuhan, China, December 21-24, 2023. (Acceptance Rate: 19.6%)
+
+- (<span style="color:red">CCF-A</span>) Yutong Ye, **Zhiwei Ling**, Yaning Yang, Xian Wei, Chen Cheng, Su Chen, Mingsong Chen, [Brief industry paper: Rtlight: Digital twin-based real-time federated traffic signal control](https://ieeexplore.ieee.org/abstract/document/10406112). IEEE Real-Time Systems Symposium (RTSS), Taipei, China, December 5-8, 2023. (Acceptance Rate: 28.0%)
+
+- (<span style="color:red">CCF-A</span>) Zhihao Yue, Jun Xia, **Zhiwei Ling**, Ming Hu, Ting Wang, Xian Wei, Mingsong Chen, [Model-contrastive learning for backdoor elimination](https://dl.acm.org/doi/abs/10.1145/3581783.3612415). ACM International Conference on Multimedia (MM), Ottawa, Canada, October 29-November 3, 2023. (Acceptance Rate: 29.3%)
+
+- (<span style="color:green">CCF-C</span>) Tian Liu, Jun Xia, **Zhiwei Ling**, Xin Fu, Shui Yu, Mingsong Chen, [Efficient federated learning for AIoT applications using knowledge distillation](https://ieeexplore.ieee.org/abstract/document/9987477). IEEE Internet of Things Journal (IoTJ), 2023. (IF=8.2)
+
+- (<span style="color:red">CCF-A</span>) Jun Xia, Tian Liu, **Zhiwei Ling**, Ting Wang, Xin Fu, Mingsong Chen, [PervasiveFL: Pervasive federated learning for heterogeneous IoT systems](https://ieeexplore.ieee.org/abstract/document/9925684). IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD), 2022. (IF=2.9)
 
 
 # 🎖 Honors and Awards
