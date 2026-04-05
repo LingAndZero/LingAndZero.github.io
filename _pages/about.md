@@ -31,7 +31,7 @@ My current research primarily focuses on the following areas:
     * Model security
 * ***Trustworthy Intelligent System***
     * Backdoor defense 
-    * Annomaly detection
+    * Anomaly detection
     * Machine unlearning
 
  <!-- I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
@@ -62,10 +62,31 @@ My current research primarily focuses on the following areas:
 
 
 # 🎖 Honors and Awards
-<!-- - *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
+
+- 2025 China Service Computing Innovation Competition, Second Prize (2025 CCF中国服务计算创新大赛暨深信服杯算法竞赛决赛, 二等奖)
+- 2023 China International College Students “Internet+” Innovation and Entrepreneurship Competition, Silver Award in Shanghai (2023 中国国际“互联网+”大学生创新创业大赛, 上海赛区银奖) 
+- 2022 National College IoT Design Competition (Huawei Cup),  Third Prize in Final (2022 全国大学生物联网设计竞赛（华为杯）, 全国总决赛三等奖) 
+- 2022 National College IoT Design Competition (Huawei Cup),  First Prize in East China Region (2022 全国大学生物联网设计竞赛（华为杯）, 华东赛区一等奖) 
+- 2022 China Post-Graduate Mathematical Contest in Modeling, Second Prize (2022 “中国光谷·华为杯”第十九届中国研究生数学建模竞赛, 二等奖)
 
 # ✍️ Academic Service
+
+Conference Reviewer for:
+- European Conference on Computer Vision (ECCV), 2026
+- IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026
+- Conference on Neural Information Processing Systems (NeurIPS), 2025
+- International Conference on Service Oriented Computing (ICSOC), 2025
+
+Journal Reviewer for:
+- International Journal of Computer Vision (IJCV)
+- IEEE Transactions on Mobile Computing (TMC)
+- IEEE Transactions on Industrial Informatics (TII)
+- IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD)
+- IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)
+- IEEE Internet of Things Journal (IoTJ)
+- IEEE Signal Processing Letters 
+- IEEE Access
+
 
 # 📖 Educations
 - *2024.09 - (now)*, **Ph.D** at Zhejiang University (ZJU), Hangzhou, China. 
