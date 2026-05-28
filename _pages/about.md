@@ -44,6 +44,8 @@ My current research primarily focuses on the following areas:
 
 # 📝 Publications 
 
+- (<span style="color:green">CCF-C</span>) Tian Liu, **Zhiwei Ling**, Ziqi Wang, Jiahui Zhai, Chenggang Shan, Zhen Yang, Bin Yang, [FedCAD: Federated Learning with Clustering, Adaptive Selection, and Delayed Aggregation for Heterogeneous IoT Environments]. IEEE Internet of Things Journal (IoTJ), 2026. (IF=8.9)
+
 - (<span style="color:red">CCF-A</span>) **Zhiwei Ling**, Yachen Chang, Hailiang Zhao, Xinkui Zhao, Kingsum Chow, Shuiguang Deng, [CADRef: Robust Out-of-Distribution Detection via Class-Aware Decoupled Relative Feature Leveraging](https://openaccess.thecvf.com/content/CVPR2025/papers/Ling_CADRef_Robust_Out-of-Distribution_Detection_via_Class-Aware_Decoupled_Relative_Feature_Leveraging_CVPR_2025_paper.pdf). IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), Nashville, USA, June 11-15, 2025. (Acceptance Rate: 22.1%)
 
 - (<span style="color:red">CCF-A</span>) Jun Xia, Zhihao Yue, Yingbo Zhou, **Zhiwei Ling**, Yiyu Shi, Xian Wei, Mingsong Chen, [Waveattack: Asymmetric frequency obfuscation-based backdoor attacks against deep neural networks](https://proceedings.neurips.cc/paper_files/paper/2024/file/4ce18228ececb78bca04cbce069891b1-Paper-Conference.pdf). Conference on Neural Information Processing Systems (NeurIPS), Vancouver, Canada, December 10-15, 2024. (Acceptance Rate: 25.8%)
