@@ -77,12 +77,15 @@ Wenzhuo Qian, Hailiang Zhao, Ziqi Wang, Zhipeng Gao, Jiayi Chen, **Zhiwei Ling**
 # ✍️ Academic Service
 
 Conference Reviewer for:
+- AAAI Conference on Artificial Intelligence (AAAI), 2027
 - European Conference on Computer Vision (ECCV), 2026
 - IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2026
 - Conference on Neural Information Processing Systems (NeurIPS), 2025
 - International Conference on Service Oriented Computing (ICSOC), 2025
 
 Journal Reviewer for:
+- IEEE Transactions on Services Computing (TSC)
+- Frontiers of Computer Science (FCS)
 - International Journal of Computer Vision (IJCV)
 - IEEE Transactions on Mobile Computing (TMC)
 - IEEE Transactions on Industrial Informatics (TII)
